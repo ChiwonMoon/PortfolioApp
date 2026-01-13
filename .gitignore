@@ -1,9 +1,26 @@
-/out/
-/.vs/
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-*.user
+# .gitignore
+
+# 빌드 결과물 무시
+out/
+build/
+bin/
 *.pdb
 *.obj
 *.exe
+*.dll
+*.ilk
+
+# visual studio 임시 파일 무시
+.vs/
+*.user
+*.suo
+*.ipch
+
+# CMake 임시 파일 무시
+CMakeCache.txt
+CMakeFiles/
+cmake_install.CMake
+# Qt 자동 생성 파일 무시
+*_autogen/
+ui_*.h
+moc_*.cpp
