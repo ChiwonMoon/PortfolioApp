@@ -1,7 +1,7 @@
 # src/ui/CMakeLists.txt
 
 # 라이브러리 생성
-add_library(portfolio_ui
+add_library(stockflow_ui
     STATIC
         mainwindow.h
         mainwindow.cpp
@@ -9,14 +9,14 @@ add_library(portfolio_ui
 )
 
 # Qt 연결
-target_link_libraries(portfolio_ui
+target_link_libraries(stockflow_ui
     PUBLIC
         Qt6::Widgets
-        portfolio_core
+        stockflow_core
 )
 
 # 포함 경로 설정 변경
-target_include_directories(portfolio_ui
+target_include_directories(stockflow_ui
     PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/.."
 )
