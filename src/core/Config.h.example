@@ -1,0 +1,12 @@
+// src/core/Config.h.example
+// 이 파일의 이름을 Config.h 로 변경하고, 아래 키를 본인의 키로 채우세요.
+
+#pragma once
+#include <QString>
+
+namespace Config {
+    // 여기에 Finnhub에서 발급받은 API 키를 입력하세요.
+    const QString API_KEY = "YOUR_API_KEY_HERE"; 
+    
+    const QString BASE_URL = "https://finnhub.io/api/v1";
+}

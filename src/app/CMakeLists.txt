@@ -6,9 +6,7 @@ add_executable(StockFlow
 )
 
 # 윈도우 앱 설정 (콘솔창 숨기기)
-set_target_properties(StockFlow PROPERTIES
-    WIN32_EXECUTABLE TRUE
-)
+set_target_properties(StockFlow PROPERTIES WIN32_EXECUTABLE TRUE)
 
 # 라이브러리 연결
 target_link_libraries(StockFlow
